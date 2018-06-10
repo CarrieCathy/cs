@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS.数据类型</title>
+</head>
+<body>
+    <h2>JS.数据类型</h2>
+    <pre>
+      1.字符串型(string)
+      2.数值型(number)
+      3.布尔型(boolean)：只能取真和假两种数值
+      4.null型：表示空值，即此处的值为空。
+      5.undefined型:表示“未定义”
+      6.object（对象）型：各种值组成的集合。
+      7.symbol：符号类型。ES6中新增。
+    </pre>
+    <pre>
+        1.字符串型
+        字符串一般用双引号（"）或单引号（'）括起来
+        2.数值型
+        (1)整数和浮点数：在Javascript中，数值的内部结构为64位的浮点小数。不过在实际的编程中，使用整数的情况会更多。不管内部构造如何，从Javascript的代码上看，只要是写为整数就能够作为整数使用，因而不必考虑是否是浮点数的问题。 eg:1===1.0 true
+        注意：某些运算只有整数才能完成，此时Javascript会自动把64位浮点数，转换成32位整数，然后再进行运算。
+        (2)可以通过typeof运算符来判断数值的类型。对于数值来说，typeof运算符返回的结果是字符串值"number"
+        (3)数值型的运算：+  -  *  /  %
+        （4）NaN:not a number,属于number类型。对NaN进行任何运算，其结果都是NaN。因此，如果在计算过程中出现了一次NaN，最终结果就一定会是NaN。
+        eg:js>NaN+1;
+           NaN
+           js>NaN*0;
+           NaN
+           js>NaN-NaN
+           NaN
+           NaN不但不与其他任何数值相等，就算是两个NaN的等值判断，其结果也为假。
+           NaN对于各种比较运算的结果也总是false
+        在Javascript中预定义了一个全局函数isNaN。isNaN函数的返回值为真的条件是其参数的值为NaN，或是在经过数据类型转换至数值类型后值为NaN。
+        3.布尔型
+        只能取真和假两种数值
+        4.null型
+        null值的意义存在于对象引用之中。null值最初的含义为“没有引用任何对象”。
+        null型只能取null这一个值。    null是一个位符，表示一个变量已经有值，但值为空。也可以通过将变量的值设置为null来清空变量。
+        5.undefined型
+        undefined型只能够取undefined这一个值。对undefined值进行typeof运算，其结果为“undefined”
+        变量没有定义或不存在（这个值表示变量不含有值）  是否是undefined直接比较   undefined===undefined true
+        6.object型
+        对象由{}分割。在括号内部，对象的属性以名称和值对的形式来定义，属性由逗号分隔。
+        7.symbol
+    </pre>
+</body>
+</html>
